@@ -2,8 +2,7 @@
 
 name: hola-mundo
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
+# Le indicamos que se ejecutará de forma manual
 on:
   workflow_dispatch:
 jobs:
