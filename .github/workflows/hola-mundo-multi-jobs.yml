@@ -3,8 +3,9 @@
 name: hola-mundo
 
 # Le indicamos que se ejecutará de forma manual
-on:
-  workflow_dispatch:
+on: 
+    push:
+    workflow_dispatch:
 jobs:
   # Tiene un job llamado "hola-job"
   hola-job:
