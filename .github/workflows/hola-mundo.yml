@@ -1,0 +1,19 @@
+# This is a basic workflow that is manually triggered
+
+name: hola-mundo
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+jobs:
+  # Tiene un job llamado "hola-job"
+  hola-job:
+    # Correrá sobre una maquina Ubuntu
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Pasos que se ejecutará en la maquina ubuntu en este caso
+    - name: Send greeting
+      run: echo "Hello ${{ inputs.name }}"
